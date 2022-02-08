@@ -1,15 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Source+Code+Pro&display=swap');
 * {
    box-sizing: border-box;
-   font-family:'Courier New', Courier, monospace;
+   font-family:'Source Code Pro', monospace;
+   font-weight: 600;
 }
 
 html, body {
     margin: 0;
     padding: 0;
 }
+.wrapper {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+}
 .main-header {
-    background-color: #010101;
-    padding-bottom: 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+    
+}
+.headerBG3, .headerBG2, .headerBG1 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.headerBG3 {
+    transform: translateZ(-20px) scale(3.05);
+}
+.headerBG2 {
+    transform: translateZ(-10px) scale(2.02);
+}
+.headerBG1 {
+    transform: translateZ(-5px) scale(1.5);
+}
+.links {
+    background-color: #FFD4DB;
 }
 .nav ul {
     margin: 0;
@@ -20,7 +53,9 @@ html, body {
 .nav a {
     display: inline-block;
     padding: .5em;
-    color: #EFF1DB;
+    color: #303030;
+    font-family: 'Permanent Marker', cursive;
+    font-weight: bold;
     text-decoration: none;
 }
 .nav a:hover {
@@ -30,7 +65,6 @@ html, body {
     text-align: center;
     font-size:  1.2em;
     font-weight: lighter;
-    border-bottom: 1px solid #EFF1DB;
 }
 .main-nav li {
     padding: 0 5%;
@@ -42,18 +76,24 @@ html, body {
     margin: 0 auto;
     width: 70%;
 }
+.content-box {
+    background-color: #D3B5E5;
+}
 .content-section {
-    margin: 1em;
     font-size: 1.1em;
-    
+    color: #303030;
 }
 .container {
     max-width: 800px;
     margin: 0 auto;
     padding: 0 1.5em;
 }
+.content-section h2, .content-section p {
+    margin: 0;
+    padding: .8em;
+}
 .section-header {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Permanent Marker', cursive;
     font-weight: bold;
     text-align: center;
     font-size: 2em;
@@ -65,7 +105,7 @@ html, body {
     border-radius: 1vw;
 }
 .main-footer {
-    background-color: #5BC2E7;
+    background-color: #BBE7FE;
     padding: .25em 0;
 }
 .main-footer-container {
