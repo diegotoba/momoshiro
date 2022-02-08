@@ -1,7 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Teko:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Permanent+Marker&display=swap');
+
 * {
    box-sizing: border-box;
-   font-family:'Source Code Pro', monospace;
+   font-family:'Oxygen', sans-serif;
    font-weight: 600;
 }
 
@@ -42,7 +44,7 @@ html, body {
     transform: translateZ(-5px) scale(1.5);
 }
 .links {
-    background-color: #FFD4DB;
+    background-color: #D3B5E5;
 }
 .nav ul {
     margin: 0;
@@ -54,12 +56,12 @@ html, body {
     display: inline-block;
     padding: .5em;
     color: #303030;
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Teko', sans-serif;
     font-weight: bold;
     text-decoration: none;
 }
 .nav a:hover {
-    background-color: rgba(255, 255, 255, .3);
+    background-color: rgba(030, 030, 030, .3);
 }
 .main-nav {
     text-align: center;
@@ -77,7 +79,8 @@ html, body {
     width: 70%;
 }
 .content-box {
-    background-color: #D3B5E5;
+    background-color: #EFF1DB;
+    min-height: 720px;
 }
 .content-section {
     font-size: 1.1em;
@@ -93,7 +96,7 @@ html, body {
     padding: .8em;
 }
 .section-header {
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Teko', sans-serif;
     font-weight: bold;
     text-align: center;
     font-size: 2em;
@@ -103,6 +106,32 @@ html, body {
     height: 40vh;
     margin: 3vw;
     border-radius: 1vw;
+}
+.tour-row {
+    border-bottom: 1px solid #303030;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+.tour-row:last-child {
+    border-bottom: none;
+}
+.tour-item {
+    display: inline-block;
+    padding-right: .5em;
+}
+.tour-date {
+    color: #202020;
+    font-weight: bolder;
+    width: 18%;
+}
+.tour-city {
+    width: 30%;
+}
+.tour-event {
+    width: 30%;
+}
+.tour-ticket {
+    max-width: 18%;
 }
 .main-footer {
     background-color: #BBE7FE;
@@ -121,4 +150,18 @@ html, body {
 }
 .footer-typo {
     height: 10vh;
+}
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em .67em;
+    cursor: pointer;
+    color: #303030;
+    background-color: #BBE7FE;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+.btn:hover {
+    background-color: #54c2fd;
 }

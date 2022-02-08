@@ -6,94 +6,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/fontawesome.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/brands.min.css"/>
+    <link rel="stylesheet" href="style.css">
     <title>Momoshiro</title>
 </head>
 <body>
-    <header>
-        <nav>
+    <div class="wrapper">
+        <section class="links">   
+            <nav class="nav main-nav">
             <ul>
                 <li><a href="index.html"> Home</a></li>
                 <li><a href="loja.html"> Loja</a></li>
                 <li><a href="about.html"> Sobre</a></li>
-           </ul>
-        </nav>
-        <hr>
-        <h1>Momoshiro</h1>
-        <!--realizar o parallax-->
-
-    </header>
-    <section>
-        <h2>Próximas Apresentações</h2>
-        <div>
+            </ul>
+            </nav>
+        </section>
+        <header class="main-header">
+                <img src="/images/BG-Full.png" class="headerBG3">
+                <img src="/images/BG-city.png" class="headerBG2">
+                <img src="/images/BG-pool.png" class="headerBG1">
+                <div class="typo">
+                    <img class="momo-typo" src="images/momoshiro-typo.png">
+                </div>
+        </header>
+        <div class="content-box">
+        <section class="content-section container">
+            <h2 class="section-header">Próximas Apresentações</h2>
             <div>
-                <strong>22-29 JUL</strong>
-                &lt;&gt;
-                <span>Idanha-a-nova, Portugal</span>
-                &lt;&gt;
-                <span>Boom Festival</span>
-                &lt;&gt;
-                <button type="button">INGRESSOS</button>
-                <hr>
+                <div class="tour-row">
+                    <span class="tour-item tour-date">22-29 JUL</span>
+                    <span class="tour-item tour-city">Idanha-a-nova, Portugal</span>
+                    <span class="tour-item tour-event">Boom Festival</span>
+                    <a href="https://boomfestival.org/boom2022/tickets/" target="_blank"><button class="btn tour-item tour-ticket" type="button">INGRESSOS</button></a>
+                </div>
+                <div class="tour-row">
+                    <span class="tour-item tour-date">01-07 AGO</span>
+                    <span class="tour-item tour-city">Dadpuszta, Hungria</span>
+                    <span class="tour-item tour-event">Ozora Festival</span>
+                    <a href="https://ozorafestival.eu/buy-a-ticket/" target="_blank"><button class="btn tour-item tour-ticket" type="button">INGRESSOS</button></a>
+                </div>
+                <div class="tour-row">
+                    <span class="tour-item tour-date">08-14 AGO</span>
+                    <span class="tour-item tour-city">Primislje, Croácia</span>
+                    <span class="tour-item tour-event">Mo:Dem Festival</span>
+                    <a href="https://modemfestival.com/tickets" target="_blank"><button class="btn tour-item tour-ticket" type="button">INGRESSOS</button></a>
+                </div>
+                <div class="tour-row">
+                    <span class="tour-item tour-date">28 AGO - 05 SET</span>
+                    <span class="tour-item tour-city">Black Rock City, EUA</span>
+                    <span class="tour-item tour-event">Burning Man Festival</span>
+                    <a href="https://www.viagogo.com/ww/Festival-Tickets/US-Festivals/Burning-Man-Festival-Tickets
+                    " target="_blank"><button class="btn tour-item tour-ticket" type="button">INGRESSOS</button></a>
+                </div>
+                <div class="tour-row">
+                    <span class="tour-item tour-date">14-18 SET</span>
+                    <span class="tour-item tour-city">Leeuwarden, Holanda</span>
+                    <span class="tour-item tour-event">Psy-Fi Festival</span>
+                    <a href="https://www.psy-fi.nl/tickets" target="_blank"><button class="btn tour-item tour-ticket" type="button">INGRESSOS</button></a>
+                </div>
+                <div class="tour-row"> 
+                    <span class="tour-item tour-date">27 DEZ - 03 JAN</span>
+                    <span class="tour-item tour-city">Pratigi, Brasil</span>
+                    <span class="tour-item tour-event">Universo Paralello</span>
+                    <a href="https://universoparalello.org/en/ticket_info/" target="_blank"><button class="btn tour-item tour-ticket" type="button">INGRESSOS</button></a>
+                </div>
             </div>
-            <div>
-                <strong>01-07 AGO</strong>
-                &lt;&gt;
-                <span>Dadpuszta, Hungria</span>
-                &lt;&gt;
-                <span>Ozora Festival</span>
-                &lt;&gt;
-                <button type="button">INGRESSOS</button>
-                <hr>
-            </div>
-            <div>
-                <strong>08-14 AGO</strong>
-                &lt;&gt;
-                <span>Primislje, Croácia</span>
-                &lt;&gt;
-                <span>Mo:Dem Festival</span>
-                &lt;&gt;
-                <button type="button">INGRESSOS</button>
-                <hr>
-            </div>
-            <div>
-                <strong>28 AGO - 05 SET</strong>
-                &lt;&gt;
-                <span>Black Rock City, EUA</span>
-                &lt;&gt;
-                <span>Burning Man Festival</span>
-                &lt;&gt;
-                <button type="button">INGRESSOS</button>
-                <hr>
-            </div>
-            <div>
-                <strong>14-18 SET</strong>
-                &lt;&gt;
-                <span>Leeuwarden, Holanda</span>
-                &lt;&gt;
-                <span>Psy-Fi Festival</span>
-                &lt;&gt;
-                <button type="button">INGRESSOS</button>
-                <hr>
-            </div>
-            <div>
-                <strong>27 DEZ - 03 JAN</strong>
-                &lt;&gt;
-                <span>Pratigi, Brasil</span>
-                &lt;&gt;
-                <span>Universo Paralello</span>
-                &lt;&gt;
-                <button type="button">INGRESSOS</button>
-            </div>
+        </section>
         </div>
-    </section>
-    <footer>
-        <h3>Momoshiro</h3>
-        <ul>
-            <li><i class="fab fa-soundcloud"></i></li>
-            <li><i class="fab fa-youtube"></i></li>
-            <li><i class="fab fa-instagram"></i></li>
-            <li><i class="fab fa-facebook"></i></li>
-        </ul>
-    </footer>
+        <footer class="main-footer">
+            <div class="container main-footer-container">
+                <img class="footer-typo" src="images/momoshiro-typo.png">
+                <ul class="nav footer-nav">
+                    <li><a href="https://soundcloud.com/arcek" target="_blank"><i class="fab fa-soundcloud"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCmJb2ArVxNzg1FUfetgSv9Q" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="https://www.instagram.com/diegotoba/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/ResistenciaMainFloor/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>    
 </body>
 </html>
