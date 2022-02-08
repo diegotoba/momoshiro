@@ -8,133 +8,143 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/fontawesome.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/brands.min.css" />
+    <link rel="stylesheet" href="style.css">
     <title>Momoshiro | Loja</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html"> Home</a></li>
-                <li><a href="loja.html"> Loja</a></li>
-                <li><a href="about.html"> Sobre</a></li>
-            </ul>
-        </nav>
-        <hr>
-        <h1>Momoshiro</h1>
-        <!--BG da loja-->
-
+    <header class="header-store">
+        <section class="links">
+            <nav class="nav main-nav">
+                <ul>
+                    <li><a href="index.html"> Home</a></li>
+                    <li><a href="loja.html"> Loja</a></li>
+                    <li><a href="about.html"> Sobre</a></li>
+                </ul>
+            </nav>
+        </section>
+        <div class="typo">
+            <img class="momo-typo" src="images/momoshiro-typo.png">
+        </div>
     </header>
-    <section>
-        <h2>Álbum de música</h2>
-        <div>
-            <div>
-                <strong>Tales from Onigashima</strong>
+    <div class="content-box">
+        <section class="container content-section">
+            <h2 class="section-header">Álbuns de música</h2>
+            <div class="shop-section">
+                <div class="shop-item">
+                    <span class="shop-item-title">Tales from Onigashima</span>
+                    <img class="shop-item-img" src="Images/talesfromonigashimasq.png"
+                        alt="capa do álbum Tales from Onigashima">
+                    <div class="shop-item-detail">
+                        <span class="shop-item-price">R$ 39,90</span>
+                        <button class="btn shop-item-btn">COMPRAR</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Follow me, if you can</span>
+                    <img class="shop-item-img" src="Images/followmeifyoucansq.png"
+                        alt="capa do álbum Follow me, if you can">
+                    <div class="shop-item-detail">
+                        <span class="shop-item-price">R$ 34,90</span>
+                        <button class="btn shop-item-btn">COMPRAR</button>
+                    </div>
+                </div>
             </div>
-            <img src="Images/talesfromonigashimasq.png" alt="capa do álbum Tales from Onigashima">
-            <div>
-                <span>R$ 39,90</span>
-                <button>COMPRAR</button>
+        </section>
+        <section class="container content-section">
+            <h2 class="section-header">Roupas e Colecionáveis</h2>
+            <div class="shop-section">
+                <div class="shop-item">
+                    <span class="shop-item-title">Camiseta Momoshiro</span>
+                    <img class="shop-item-img" src="Images/camisa.jpg" alt="camisa com logo do Momoshiro">
+                    <div class="shop-item-detail">
+                        <span class="shop-item-price">R$ 49,90</span>
+                        <button class="btn shop-item-btn">COMPRAR</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Camiseta Onigashima</span>
+                    <img class="shop-item-img" src="Images/camisa2.jpg" alt="camisa Onigashima">
+                    <div class="shop-item-detail">
+                        <span class="shop-item-price">R$ 49,90</span>
+                        <button class="btn shop-item-btn">COMPRAR</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Caneca Onigashima</span>
+                    <img class="shop-item-img" src="Images/caneca.jpeg" alt="caneca Onigashima">
+                    <div class="shop-item-detail">
+                        <span class="shop-item-price">R$ 24,90</span>
+                        <button class="btn shop-item-btn">COMPRAR</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Boné Momoshiro</span>
+                    <img class="shop-item-img" src="Images/bone.jpg" alt="Bone com logo Momoshiro">
+                    <div class="shop-item-detail">
+                        <span class="shop-item-price">R$ 39,90</span>
+                        <button class="btn shop-item-btn">COMPRAR</button>
+                    </div>
+                </div>
             </div>
+        </section>
+        <section class="container content-section">
+            <h2 class="section-header">CARRINHO</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PREÇO</span>
+                <span class="cart-quant cart-header cart-column">QUANTIDADE</span>
+            </div>
+            <div class="cart-items">
+                <div class="cart-row">
+                    <div class="cart-item cart-column">
+                        <img class="cart-item-img" src="Images/camisa.jpg" width="100" height="100">
+                        <span class="cart-item-title">Camiseta Momoshiro</span>
+                    </div>
+                    <span class="cart-price cart-column">R$49,90</span>
+                    <div class="cart-quant cart-column">
+                        <input class="cart-item-quant" type="number" value="1">
+                        <button class="btn btn-danger" type="button">REMOVER</button>
+                    </div>
+                </div>
+                <div class="cart-row">
+                    <div class="cart-item cart-column">
+                        <img class="cart-item-img" src="Images/talesfromonigashimasq.png" width="100" height="100">
+                        <span class="cart-item-title">Tales from Onigashima</span>
+                    </div>
+                    <span class="cart-price cart-column">R$39.90</span>
+                    <div class="cart-quant cart-column">
+                        <input class="cart-item-quant" type="number" value="2">
+                        <button class="btn btn-danger" type="button">REMOVER</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cart-total">
+                <span class="cart-total-title">Total</span>
+                <span class="cart-total-price">R$89.80</span>
+            </div>
+
+            <button class="btn btn-purchase" type="button">FINALIZAR COMPRA</button>
+        
+        </section>
+    </div>
+
+    <footer class="main-footer">
+        <div class="container main-footer-container">
+            <img class="footer-typo" src="images/momoshiro-typo.png">
+            <ul class="nav footer-nav">
+                <li><a href="https://soundcloud.com/arcek" target="_blank"><i class="fab fa-soundcloud"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UCmJb2ArVxNzg1FUfetgSv9Q" target="_blank"><i
+                            class="fab fa-youtube"></i></a></li>
+                <li><a href="https://www.instagram.com/diegotoba/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li><a href="https://www.facebook.com/ResistenciaMainFloor/" target="_blank"><i
+                            class="fab fa-facebook"></i></a></li>
+            </ul>
         </div>
-        <div>
-            <div>
-                <strong>Follow me, if you can</strong>
-            </div>
-            <img src="Images/followmeifyoucansq.png" alt="capa do álbum Follow me, if you can">
-            <div>
-                <span>R$ 34,90</span>
-                <button>COMPRAR</button>
-            </div>
-        </div>
-    </section>
-    <section>
-        <h2>Roupas e Colecionáveis</h2>
-        <div>
-            <div>
-                <strong>Camiseta Momoshiro</strong>
-            </div>
-            <img src="Images/camisa.jpg" alt="camisa com logo do Momoshiro">
-            <div>
-                <span>R$ 49,90</span>
-                <button>COMPRAR</button>
-            </div>
-        </div>
-        <div>
-            <div>
-                <strong>Camiseta Onigashima</strong>
-            </div>
-            <img src="Images/camisa2.jpg" alt="camisa Onigashima">
-            <div>
-                <span>R$ 49,90</span>
-                <button>COMPRAR</button>
-            </div>
-        </div>
-        <div>
-            <div>
-                <strong>Caneca Onigashima</strong>
-            </div>
-            <img src="Images/caneca.jpeg" alt="caneca Onigashima">
-            <div>
-                <span>R$ 24,90</span>
-                <button>COMPRAR</button>
-            </div>
-        </div>
-        <div>
-            <div>
-                <strong>Boné Momoshiro</strong>
-            </div>
-            <img src="Images/bone.jpg" alt="Bone com logo Momoshiro">
-            <div>
-                <span>R$ 39,90</span>
-                <button>COMPRAR</button>
-            </div>
-        </div>
-    </section>
-    <section>
-        <h2>CARRINHO</h2>
-        <div>
-            <strong>ITEM</strong>
-            &lt;&gt;
-            <strong>PREÇO</strong>
-            &lt;&gt;
-            <strong>QUANTIDADE</strong>
-        </div>
-        <div>
-            <img src="Images/camisa.jpg" width="100" height="100">
-            <span>Camiseta Momoshiro</span>
-            &lt;&gt;
-            <span>R$49,90</span>
-            &lt;&gt;
-            <input type="number" value="1">
-            <button type="button">REMOVER</button>
-        </div>
-        <div>
-            <img src="Images/talesfromonigashimasq.png" width="100" height="100">
-            <span>Tales from Onigashima</span>
-            &lt;&gt;
-            <span>R$39.90</span>
-            &lt;&gt;
-            <input type="number" value="2">
-            <button type="button">REMOVER</button>
-        </div>
-        <hr>
-        <div>
-            <strong>Total</strong>
-            <span>R$89.80</span>
-        </div>
-        <div>
-            <button type="button">FINALIZAR COMPRA</button>
-        </div>
-    </section>
-    <footer>
-        <h3>Momoshiro</h3>
-        <ul>
-            <li><i class="fab fa-soundcloud"></i></li>
-            <li><i class="fab fa-youtube"></i></li>
-            <li><i class="fab fa-instagram"></i></li>
-            <li><i class="fab fa-facebook"></i></li>
-        </ul>
     </footer>
+
 </body>
+
 </html>
